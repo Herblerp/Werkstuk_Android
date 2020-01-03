@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Werkstuk_Android</string>
+    <string name="btn_home_lists_text">My lists</string>
 </resources>
