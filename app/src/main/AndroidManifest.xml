@@ -11,7 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-
+        <activity android:name=".DisplayListEntriesActivity"
+            android:label="Chenge me plez"
+            android:parentActivityName=".DisplayListsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.werkstuk_android.DisplayListsActivity" />
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,7 +39,7 @@
             android:parentActivityName=".DisplayListsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.werkstuk_android.MainActivity" />
+                android:value="com.example.werkstuk_android.DisplayListsActivity" />
         </activity>
     </application>
 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/default_layout_background">
+
+    <EditText
+        android:id="@+id/textview_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:maxLines="1"
+        android:inputType="text"
+        android:scrollHorizontally="true"
+        android:hint="@string/hint_list_name"
+        android:drawableLeft="@drawable/ic_list_gray"
+        android:drawableStart="@drawable/ic_list_gray"
+        android:drawablePadding="15dp"
+        android:background="@color/default_view_backgorund"
+        />
+
+</LinearLayout>

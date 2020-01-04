@@ -2,6 +2,7 @@
 package com.example.werkstuk_android;
 
 import android.content.Context;
+import android.content.Intent;
 import android.text.Layout;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -19,12 +20,16 @@ import java.util.List;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder> {
 
+    private Context appContext;
     private LayoutInflater mInflater;
     private final List<ListWithEntries> myLists;
+
+    public final static String EXTRA_LIST_ID = "com.example.werkstuk_android.LIST_ID";
 
     public ListAdapter(Context context, List<ListWithEntries> myLists) {
         mInflater = LayoutInflater.from(context);
         this.myLists = myLists;
+        this.appContext = context;
     }
 
     @NonNull
@@ -66,6 +71,10 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder
             ListWithEntries list = myLists.get(position);
 
             Log.d("DevLog_ListAdapter","clicked list with id: " + list.list.userListId);
+
+            Intent intent = new Intent(appContext,DisplayListEntriesActivity.class);
+            intent.putExtra("com.example.werkstuk_android.LIST_ID",list.list.userListId);
+            appContext.startActivity(intent);
         }
     }
 
