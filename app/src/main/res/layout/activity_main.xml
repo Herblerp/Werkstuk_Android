@@ -1,19 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#efefef">
 
-    <Button
-        android:id="@+id/btn_homepage_lists"
-        android:layout_width="wrap_content"
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/GridLayout1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="button_click"
-        android:text="@string/btn_home_lists_text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        tools:context=".MainActivity"
+        app:columnCount="2">
+
+        <Button
+            style="@style/style_dashboard_btn"
+
+            android:onClick="click_list_btn"
+            android:drawableEnd="@drawable/dashboard_list_icon"
+            android:drawableRight="@drawable/dashboard_list_icon"
+            android:text="@string/text_btn_dashboard_lists" />
+
+        <Button
+            style="@style/style_dashboard_btn"
+
+            android:onClick="click_cal_btn"
+            android:text="@string/text_btn_dashboard_calendar"
+            android:drawableEnd="@drawable/dashboard_cal_icon"
+            android:drawableRight="@drawable/dashboard_cal_icon"/>
+
+        <Button
+            style="@style/style_dashboard_btn"
+
+            android:onClick="click_recipe_btn"
+            android:text="@string/text_btn_dashboard_recipes"
+            android:drawableEnd="@drawable/dashboard_recipe_icon"
+            android:drawableRight="@drawable/dashboard_recipe_icon"/>
+
+        <Button
+            style="@style/style_dashboard_btn"
+
+            android:onClick="click_map_btn"
+            android:text="@string/text_btn_dashboard_map"
+            android:drawableEnd="@drawable/dashboard_map_icon"
+            android:drawableRight="@drawable/dashboard_map_icon"/>
+
+
+
+    </androidx.gridlayout.widget.GridLayout>
+</ScrollView>

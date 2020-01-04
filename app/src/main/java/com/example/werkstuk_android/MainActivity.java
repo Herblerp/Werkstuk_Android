@@ -1,7 +1,6 @@
 package com.example.werkstuk_android;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -17,8 +16,19 @@ public class MainActivity extends AppCompatActivity {
         Log.i("MainActivity","App sais hello!");
     }
 
-    public void button_click(View view) {
-        Button button = findViewById(R.id.btn_homepage_lists);
-        button.setText("You clicked me!");
+    public void click_list_btn(View view) {
+
+    }
+
+    public void click_cal_btn(View view) {
+
+    }
+
+    public void click_recipe_btn(View view) {
+
+    }
+
+    public void click_map_btn(View view) {
+
     }
 }

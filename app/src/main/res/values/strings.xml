@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Werkstuk_Android</string>
-    <string name="btn_home_lists_text">My lists</string>
+    <string name="text_btn_dashboard_lists">My lists</string>
+    <string name="text_btn_dashboard_calendar">Calendar</string>
+    <string name="text_btn_dashboard_recipes">Recipes</string>
+    <string name="text_btn_dashboard_map">Map</string>
 </resources>
