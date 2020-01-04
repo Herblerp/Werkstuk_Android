@@ -7,9 +7,10 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = "lists")
 public class UserList {
 
+    public UserList(){}
+
     @PrimaryKey
     public int userListId;
 
-    @ColumnInfo(name = "content")
-    public String content;
+    public String title;
 }

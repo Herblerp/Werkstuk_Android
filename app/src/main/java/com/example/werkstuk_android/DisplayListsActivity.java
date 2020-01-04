@@ -31,6 +31,11 @@ public class DisplayListsActivity extends AppCompatActivity {
 
                 String title = data.getStringExtra(AddListActivity.EXTRA_LIST_TITLE);
                 Log.i("DevLog_List","Successfully received title: " + title);
+
+                AppRepository repo = new AppRepository(getApplication());
+                UserList newList = new UserList();
+                newList.title = title;
+                repo.insertList(newList);
             }
         }
     }

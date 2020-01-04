@@ -6,7 +6,7 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-@Database(entities = {UserList.class}, version = 1)
+@Database(entities = {UserList.class, UserListEntry.class}, version = 1)
 public abstract class AppDatabase extends RoomDatabase {
 
     public abstract UserListDao userListDao();
@@ -16,7 +16,9 @@ public abstract class AppDatabase extends RoomDatabase {
         return Room.databaseBuilder(
                 context.getApplicationContext(),
                 AppDatabase.class,
-                "app_database").build();
+                "app_database")
+                .allowMainThreadQueries()
+                .build();
     }
 
 }

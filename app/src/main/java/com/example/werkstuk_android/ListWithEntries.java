@@ -6,7 +6,10 @@ import androidx.room.Relation;
 import java.util.List;
 
 public class ListWithEntries {
-    @Embedded public List list;
+
+    public ListWithEntries(){}
+
+    @Embedded public UserList list;
     @Relation(
             parentColumn = "userListId",
             entityColumn = "userListId"

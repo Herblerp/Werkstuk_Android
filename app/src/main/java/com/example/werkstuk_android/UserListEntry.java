@@ -6,12 +6,12 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "list_entries")
 public class UserListEntry {
+
+    public UserListEntry(){ }
+
     @PrimaryKey
     public int listEntryId;
 
-    @ColumnInfo(name="listId")
     public int userListId;
-
-    @ColumnInfo(name="content")
     public String content;
 }
