@@ -9,7 +9,7 @@ public class UserListEntry {
 
     public UserListEntry(){ }
 
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     public int listEntryId;
 
     public int userListId;

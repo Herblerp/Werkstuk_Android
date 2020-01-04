@@ -1,12 +1,16 @@
 package com.example.werkstuk_android;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.Observer;
 
 import android.app.Activity;
+import android.app.Application;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+
+import java.util.List;
 
 public class DisplayListsActivity extends AppCompatActivity {
 
@@ -19,7 +23,7 @@ public class DisplayListsActivity extends AppCompatActivity {
     }
 
     public void add_list(View view) {
-        Log.i("DisplayListsActivityLog","Add lists pressed.");
+        Log.i("Devlog_List","Add lists pressed.");
         Intent displayList = new Intent(this, AddListActivity.class);
         startActivityForResult(displayList, LIST_TITLE_REQUEST);
     }
