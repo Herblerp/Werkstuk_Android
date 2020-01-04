@@ -2,6 +2,8 @@
 package com.example.werkstuk_android;
 
 import android.content.Context;
+import android.text.Layout;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,7 +39,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder
     public void onBindViewHolder(@NonNull ListViewHolder holder, int position)
     {
         ListWithEntries current = myLists.get(position);
-        holder.wordItemView.setText(current.list.title);
+        holder.wordItemView.setText(capitalize(current.list.title));
     }
 
     @Override
@@ -45,7 +47,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder
         return myLists.size();
     }
 
-    class ListViewHolder extends RecyclerView.ViewHolder
+    class ListViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener
     {
         public final TextView wordItemView;
         final ListAdapter mAdapter;
@@ -54,6 +56,22 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder
             super(itemView);
             wordItemView = itemView.findViewById(R.id.listTitle);
             this.mAdapter = adapter;
+            itemView.setOnClickListener(this);
         }
+
+        @Override
+        public void onClick(View v) {
+
+            int position = getLayoutPosition();
+            ListWithEntries list = myLists.get(position);
+
+            Log.d("DevLog_ListAdapter","clicked list with id: " + list.list.userListId);
+        }
+    }
+
+    public static String capitalize(String str)
+    {
+        if(str == null) return str;
+        return str.substring(0, 1).toUpperCase() + str.substring(1);
     }
 }
