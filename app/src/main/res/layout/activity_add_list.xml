@@ -9,7 +9,7 @@
     android:background="@color/default_layout_background">
 
     <EditText
-        android:id="@+id/searchbox"
+        android:id="@+id/textview_list_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="15dp"

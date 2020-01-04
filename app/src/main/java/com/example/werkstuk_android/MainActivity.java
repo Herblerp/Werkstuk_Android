@@ -15,11 +15,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.i("MainActivity","App sais hello!");
+        Log.i("DevLog_Main","Hello app!");
     }
 
     public void click_list_btn(View view) {
-        Log.i("MainActivityLog","Display lists pressed.");
+        Log.i("DevLog_Main","Display lists pressed.");
         Intent displayList = new Intent(this, DisplayListsActivity.class);
         startActivity(displayList);
     }
