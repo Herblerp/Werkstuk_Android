@@ -8,8 +8,9 @@
     android:background="@color/default_layout_background"
     android:orientation="vertical">
 
-<fragment
-    android:id="@+id/fragment_addList"
+    <fragment
+    android:id="@+id/fragment_addListEntry"
+    android:name="com.example.werkstuk_android.AddEntryFragment"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:layout="@layout/fragment_add_list_entry"
@@ -17,8 +18,10 @@
 
     <fragment
         android:id="@+id/fragment_showEntries"
+        android:name="com.example.werkstuk_android.ListEntryFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:layout="@layout/activity_display_list_entries"/>
+        tools:layout="@layout/fragment_display_list_entries"
+        />
 
 </LinearLayout>

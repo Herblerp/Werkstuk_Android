@@ -7,14 +7,13 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
-public class AddEntryFragment extends Fragment {
+public class ListEntryFragment extends Fragment {
 
-    public AddEntryFragment() {}
+    public ListEntryFragment() {}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState){
-        return inflater.inflate(R.layout.fragment_add_list_entry, container, false);
+        return inflater.inflate(R.layout.fragment_display_list_entries, container, false);
     }
-
 }
