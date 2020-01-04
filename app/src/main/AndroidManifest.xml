@@ -19,16 +19,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".DisplayListsActivity"
-            android:label = "Lists"
+            android:label="@string/label_display_lists"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.werkstuk_android.MainActivity" />
         </activity>
-
+        <activity
+            android:name=".AddListActivity"
+            android:label="@string/label_add_list"
+            android:parentActivityName=".DisplayListsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.werkstuk_android.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

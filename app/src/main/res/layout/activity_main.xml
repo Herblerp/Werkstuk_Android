@@ -1,50 +1,50 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/default_layout_background">
+
+<androidx.gridlayout.widget.GridLayout
+    android:id="@+id/GridLayout1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/color_background">
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    app:columnCount="2">
 
-    <androidx.gridlayout.widget.GridLayout
-        android:id="@+id/GridLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:context=".MainActivity"
-        app:columnCount="2">
+    <Button
+        style="@style/style_dashboard_btn"
 
-        <Button
-            style="@style/style_dashboard_btn"
+        android:onClick="click_list_btn"
+        android:drawableEnd="@drawable/ic_list_blue"
+        android:drawableRight="@drawable/ic_list_blue"
+        android:text="@string/label_display_lists" />
 
-            android:onClick="click_list_btn"
-            android:drawableEnd="@drawable/ic_list"
-            android:drawableRight="@drawable/ic_list"
-            android:text="@string/text_btn_dashboard_lists" />
+    <Button
+        style="@style/style_dashboard_btn"
 
-        <Button
-            style="@style/style_dashboard_btn"
+        android:onClick="click_cal_btn"
+        android:text="@string/label_calendar"
+        android:drawableEnd="@drawable/ic_event"
+        android:drawableRight="@drawable/ic_event"/>
 
-            android:onClick="click_cal_btn"
-            android:text="@string/text_btn_dashboard_calendar"
-            android:drawableEnd="@drawable/ic_event"
-            android:drawableRight="@drawable/ic_event"/>
+    <Button
+        style="@style/style_dashboard_btn"
 
-        <Button
-            style="@style/style_dashboard_btn"
+        android:onClick="click_recipe_btn"
+        android:text="@string/label_recipes"
+        android:drawableEnd="@drawable/ic_food"
+        android:drawableRight="@drawable/ic_food"/>
 
-            android:onClick="click_recipe_btn"
-            android:text="@string/text_btn_dashboard_recipes"
-            android:drawableEnd="@drawable/ic_food"
-            android:drawableRight="@drawable/ic_food"/>
+    <Button
+        style="@style/style_dashboard_btn"
 
-        <Button
-            style="@style/style_dashboard_btn"
-
-            android:onClick="click_map_btn"
-            android:text="@string/text_btn_dashboard_map"
-            android:drawableEnd="@drawable/ic_place"
-            android:drawableRight="@drawable/ic_place"/>
+        android:onClick="click_map_btn"
+        android:text="@string/label_map"
+        android:drawableEnd="@drawable/ic_place"
+        android:drawableRight="@drawable/ic_place"/>
 
 
 
-    </androidx.gridlayout.widget.GridLayout>
+</androidx.gridlayout.widget.GridLayout>
 </ScrollView>

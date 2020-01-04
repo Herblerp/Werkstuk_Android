@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="color_background">#F1EFE4</color>
-    <color name="color_dashboard_btn">#EEEBDD</color>
+    <color name="default_layout_background">#EEEBDD</color>
+    <color name="default_view_backgorund">#F4F2E9</color>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_background">
+    android:background="@color/default_layout_background">
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/GridLayout1"
@@ -16,15 +16,15 @@
             style="@style/style_dashboard_btn"
 
             android:onClick="click_list_btn"
-            android:drawableEnd="@drawable/ic_list"
-            android:drawableRight="@drawable/ic_list"
-            android:text="@string/text_btn_dashboard_lists" />
+            android:drawableEnd="@drawable/ic_list_blue"
+            android:drawableRight="@drawable/ic_list_blue"
+            android:text="@string/label_display_lists" />
 
         <Button
             style="@style/style_dashboard_btn"
 
             android:onClick="click_cal_btn"
-            android:text="@string/text_btn_dashboard_calendar"
+            android:text="@string/label_calendar"
             android:drawableEnd="@drawable/ic_event"
             android:drawableRight="@drawable/ic_event"/>
 
@@ -32,7 +32,7 @@
             style="@style/style_dashboard_btn"
 
             android:onClick="click_recipe_btn"
-            android:text="@string/text_btn_dashboard_recipes"
+            android:text="@string/label_recipes"
             android:drawableEnd="@drawable/ic_food"
             android:drawableRight="@drawable/ic_food"/>
 
@@ -40,7 +40,7 @@
             style="@style/style_dashboard_btn"
 
             android:onClick="click_map_btn"
-            android:text="@string/text_btn_dashboard_map"
+            android:text="@string/label_map"
             android:drawableEnd="@drawable/ic_place"
             android:drawableRight="@drawable/ic_place"/>
 

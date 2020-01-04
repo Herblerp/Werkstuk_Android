@@ -19,8 +19,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void click_list_btn(View view) {
-        Intent intent = new Intent(this, DisplayListsActivity.class);
-        startActivity(intent);
+        Log.i("MainActivityLog","Display lists pressed.");
+        Intent displayList = new Intent(this, DisplayListsActivity.class);
+        startActivity(displayList);
     }
 
     public void click_cal_btn(View view) {
