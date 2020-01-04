@@ -3,7 +3,9 @@ package com.example.werkstuk_android;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 
 public class AddListActivity extends AppCompatActivity {
 
@@ -20,5 +22,13 @@ public class AddListActivity extends AppCompatActivity {
         return true;
     }
 
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        //Do nothing
+        if (item.getItemId() == R.id.action_submit) {
+            Log.i("AddListActivity","New list form submitted.");
+            return true;
+        }
+        return false;
+    }
 }
