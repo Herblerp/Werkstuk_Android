@@ -39,7 +39,7 @@ public class AddListActivity extends AppCompatActivity {
             String list_title = textview_list_title.getText().toString();
 
             if(list_title.equals("")){
-                Log.i("DevLog_List","List title empty, showing toast.");
+                Log.i("DevLog_List","com.example.werkstuk_android.List title empty, showing toast.");
                 showEmptyTitleMessage();
                 return false;
             }
