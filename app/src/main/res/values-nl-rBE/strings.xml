@@ -1,0 +1,14 @@
+<resources>
+    <string name="add_list_item">Ga</string>
+    <string name="app_name">Werkstuk_Android</string>
+    <string name="label_add_list">Lijst toevoegen</string>
+    <string name="label_display_lists">Mijn lijsten</string>
+    <string name="label_calendar">Kalender</string>
+    <string name="label_recipes">Recepten</string>
+    <string name="label_map">Map</string>
+    <string name="hint_list_name">Lijst naam</string>
+    <string name="menu_item_add_list_done">Klaar</string>
+    <string name="toast_empty_list_title">Gelieve een titel in te geven.</string>
+    <string name="hint_list_entry">Voeg een item toe</string>
+    <string name="list_name">%s</string>
+</resources>
