@@ -4,8 +4,8 @@
     style="@style/list_style">
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/listTitle"
-        style="@style/list_title"
+        android:id="@+id/entryContent"
+        style="@style/list_entry"
         android:drawableLeft="@drawable/ic_list_gray"
         android:drawableStart="@drawable/ic_list_gray"
         android:drawablePadding="20dp"/>

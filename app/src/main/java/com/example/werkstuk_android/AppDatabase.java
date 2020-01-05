@@ -11,6 +11,7 @@ import androidx.room.migration.Migration;
 public abstract class AppDatabase extends RoomDatabase {
 
     public abstract UserListDao userListDao();
+    public abstract UserListEntryDao userListEntryDao();
 
     static AppDatabase getDatabase(final Context context)
     {

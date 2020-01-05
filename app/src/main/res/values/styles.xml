@@ -29,4 +29,21 @@
         <item name="android:textSize">18sp</item>
     </style>
 
+    <style name="list_entry">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="list_style">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:background">@color/default_view_backgorund</item>
+        <item name="android:paddingStart">12dp</item>
+    </style>
+
 </resources>

@@ -1,4 +1,5 @@
 <resources>
+    <string name="add_list_item">Add</string>
     <string name="app_name">Werkstuk_Android</string>
     <string name="label_add_list">Add list</string>
     <string name="label_display_lists">My lists</string>
@@ -8,4 +9,5 @@
     <string name="hint_list_name">List name</string>
     <string name="menu_item_add_list_done">Done</string>
     <string name="toast_empty_list_title">Please enter a list title.</string>
+    <string name="hint_list_entry">Add an item</string>
 </resources>
