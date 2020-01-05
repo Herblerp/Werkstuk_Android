@@ -32,6 +32,9 @@ public class DisplayListEntriesActivity extends AppCompatActivity implements Add
 
         mRepo = new AppRepository(getApplication());
 
+        ListWithEntries myList = mRepo.getListById(listId);
+        setTitle(capitalize(myList.list.title));
+
         FragmentManager fragmentManager = getSupportFragmentManager();
         listEntryFragment = (ListEntryFragment) fragmentManager.findFragmentByTag(LIST_TAG);
         if (listEntryFragment == null)
@@ -54,5 +57,11 @@ public class DisplayListEntriesActivity extends AppCompatActivity implements Add
         Log.i("DevLog","Callback received content!");
         add_list_entry(content);
         listEntryFragment.UpdateView();
+    }
+
+    public static String capitalize(String str)
+    {
+        if(str == null) return str;
+        return str.substring(0, 1).toUpperCase() + str.substring(1);
     }
 }
