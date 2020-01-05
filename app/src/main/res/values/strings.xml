@@ -11,7 +11,7 @@
     <string name="toast_empty_list_title">Please enter a list title.</string>
     <string name="hint_list_entry">Add an item</string>
     <string name="list_name">%s</string>
-    <string name="menu_label_recipe">Recipes</string>
+    <string name="menu_label_recipe">Random recipe</string>
     <string name="label_recipe_name">Name:</string>
     <string name="label_recipe_description">Description:</string>
 </resources>

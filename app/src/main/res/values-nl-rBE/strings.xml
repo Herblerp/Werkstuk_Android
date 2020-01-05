@@ -11,7 +11,7 @@
     <string name="toast_empty_list_title">Gelieve een titel in te geven.</string>
     <string name="hint_list_entry">Voeg een item toe</string>
     <string name="list_name">%s</string>
-    <string name="menu_label_recipe">Recepten</string>
+    <string name="menu_label_recipe">Willekeurig recept</string>
     <string name="label_recipe_description">Beschrijving:</string>
     <string name="label_recipe_name">Naam:</string>
 </resources>
