@@ -1,3 +1,4 @@
+//Source: https://stackoverflow.com/questions/17023376/get-view-of-fragment-from-fragmentactivity
 package com.example.werkstuk_android;
 
 import android.os.Bundle;
@@ -46,5 +47,10 @@ public class ListEntryFragment extends Fragment {
         mRecyclerView.setAdapter(mAdapter);
         // Give the RecyclerView a default layout manager.
         mRecyclerView.setLayoutManager(new LinearLayoutManager(activity));
+    }
+
+    public void notifyUpdate(){
+        mRecyclerView.setAdapter(mAdapter);
+        mAdapter.notifyDataSetChanged();
     }
 }

@@ -1,4 +1,4 @@
-//Code from https://codelabs.developers.google.com/codelabs/android-training-create-recycler-view/#3
+//Source https://codelabs.developers.google.com/codelabs/android-training-create-recycler-view/#3
 package com.example.werkstuk_android;
 
 import android.content.Context;

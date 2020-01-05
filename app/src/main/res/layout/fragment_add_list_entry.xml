@@ -7,7 +7,7 @@
 
     <EditText
         android:hint="@string/hint_list_entry"
-        android:id="@+id/EditText01"
+        android:id="@+id/list_entry_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_width="0dp">
