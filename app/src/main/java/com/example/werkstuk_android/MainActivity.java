@@ -2,6 +2,7 @@ package com.example.werkstuk_android;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -30,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void click_recipe_btn(View view) {
-
+        Intent recipeActivity = new Intent(this, RecipeAvtivity.class);
+        startActivity(recipeActivity);
     }
 
     public void click_map_btn(View view) {
