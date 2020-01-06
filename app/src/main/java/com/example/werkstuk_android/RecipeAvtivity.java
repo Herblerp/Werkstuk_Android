@@ -1,4 +1,3 @@
-// Source: https://medium.com/@JasonCromer/android-asynctask-http-request-tutorial-6b429d833e28
 package com.example.werkstuk_android;
 
 import androidx.appcompat.app.AppCompatActivity;
